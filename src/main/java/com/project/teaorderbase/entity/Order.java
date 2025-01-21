@@ -1,7 +1,6 @@
 package com.project.teaorderbase.entity;
 
 import jakarta.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "orders")
@@ -15,7 +14,7 @@ public class Order {
     private User user;
 
     @Column(name = "date_order")
-    private LocalDateTime dateOrder;
+    private String dateOrder;
 
     @Column(nullable = false)
     private float price;
@@ -36,11 +35,11 @@ public class Order {
         this.user = user;
     }
 
-    public LocalDateTime getDateOrder() {
+    public String getDateOrder() {
         return dateOrder;
     }
 
-    public void setDateOrder(LocalDateTime dateOrder) {
+    public void setDateOrder(String dateOrder) {
         this.dateOrder = dateOrder;
     }
 
@@ -51,4 +50,5 @@ public class Order {
     public void setPrice(float price) {
         this.price = price;
     }
+
 }

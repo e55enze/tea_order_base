@@ -11,16 +11,13 @@ public class OrderData {
     private String city;
     private String address;
     private List<OrderItem> cartItems;
-    private Float price;
+    private float price;
+
     private String orderTime;
 
-    public double getPrice() {
-        return price;
-    }
+    public float getPrice() { return price; }
 
-    public void setPrice(float price) {
-        this.price = price;
-    }
+    public void setPrice(float price) { this.price = price; }
 
     public String getName() {
         return name;
@@ -96,8 +93,8 @@ public class OrderData {
 
         private Long productId;
         private String productName;
-        private Integer productQuantity;
-        private Double productPrice;
+        private Short productQuantity;
+        private Float productPrice;
 
         public Long getProductId() {
             return productId;
@@ -115,19 +112,19 @@ public class OrderData {
             this.productName = productName;
         }
 
-        public Integer getProductQuantity() {
+        public short getProductQuantity() {
             return productQuantity;
         }
 
-        public void setProductQuantity(Integer productQuantity) {
+        public void setProductQuantity(Short productQuantity) {
             this.productQuantity = productQuantity;
         }
 
-        public Double getProductPrice() {
+        public float getProductPrice() {
             return productPrice;
         }
 
-        public void setProductPrice(Double productPrice) {
+        public void setProductPrice(Float productPrice) {
             this.productPrice = productPrice;
         }
 
